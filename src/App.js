@@ -1,13 +1,11 @@
-import axios from "axios";
 import React from "react";
-
-const testRequest = await axios.get('https://hidden-refuge-97632-934ef58eadcb.herokuapp.com/getHtml').then(({data}) => data);
-console.log(testRequest);
+import { ComponentsBlock } from './components/ComponentsBlock';
 
 function App() {
   return (
-    <div className="App">
-      <h1>Hello World..!</h1>
+    <div className="app">
+      <h1>Web page to test SSG in SEO</h1>
+      <ComponentsBlock componentsQty={100} />
     </div>
   );
 }
