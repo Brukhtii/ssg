@@ -1,5 +1,6 @@
 import axios from "axios";
 import React, { useEffect, useState } from "react";
+import { CSRComponentsBlock } from "./CSRComponentsBlock";
 
 const requestSSRComponents = async (componentsQty) => await axios.post(
         'https://brukhtii-node-js-ssr-ssg-4dfd839344ba.herokuapp.com/getSSG', 
@@ -20,7 +21,18 @@ export function ComponentsBlock({ componentsQty }) {
     getComponents();
   }, [])
 
-  return (
+  return (<div className="rendering-type"> SSR rendering
     <div className="components-block" dangerouslySetInnerHTML={{__html: components}}></div>
+  </div>
+  );
+
+
+  return (
+    <div className="both-methods">
+      <div className="components-block" dangerouslySetInnerHTML={{__html: components}}></div>
+      <div className="components-block">
+        <CSRComponentsBlock componentsQty={500}/>
+      </div>
+    </div>
   );
 }

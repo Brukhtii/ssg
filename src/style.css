@@ -1,3 +1,7 @@
+.modified-components {
+  display: flex;
+}
+
 .navigation-bar {
     width: 100%;
   }
