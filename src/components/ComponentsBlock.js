@@ -21,7 +21,7 @@ export function ComponentsBlock({ componentsQty }) {
     getComponents();
   }, [])
 
-  return (<div className="rendering-type"> SSR rendering
+  return (<div className="rendering-type">SSG rendering
     <div className="components-block" dangerouslySetInnerHTML={{__html: components}}></div>
   </div>
   );
