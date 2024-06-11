@@ -21,18 +21,10 @@ export function ComponentsBlock({ componentsQty }) {
     getComponents();
   }, [])
 
-  return (<div className="rendering-type">SSG rendering
+  return (<div className="rendering-type">
+    <h1 className="rendering-type-title">SSG rendering</h1>
     <div className="components-block" dangerouslySetInnerHTML={{__html: components}}></div>
   </div>
   );
 
-
-  return (
-    <div className="both-methods">
-      <div className="components-block" dangerouslySetInnerHTML={{__html: components}}></div>
-      <div className="components-block">
-        <CSRComponentsBlock componentsQty={500}/>
-      </div>
-    </div>
-  );
 }

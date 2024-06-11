@@ -7,7 +7,7 @@ function App() {
     <div className="app">
       <h1>Web page to test SSG + CSR in SEO</h1>
       <div className="modified-components">
-       <CSRComponentsBlock componentsQty={500} />
+        <CSRComponentsBlock componentsQty={500} />
         <ComponentsBlock componentsQty={500} />
       </div>
     </div>

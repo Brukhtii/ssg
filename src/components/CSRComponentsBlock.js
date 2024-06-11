@@ -29,7 +29,8 @@ export const CSRComponentsBlock = ({ componentsQty }) => {
     }
 
   return (
-        <div className="rendering-type">CSR rendering
+        <div className="rendering-type">
+            <h1 className="rendering-type-title">CSR rendering</h1>
             <div className="components-block">
                 <h1 className="font-weight-light components-qty">Components quantity: {componentsQty}</h1>
                     <div id="components" className="components">
